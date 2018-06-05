@@ -1,0 +1,3 @@
+Run the following command from the package manager console which should generate a script for a new blank database. 
+
+Update-Database -Script -StartUpProjectName CTCBAStorage -SourceMigration:0

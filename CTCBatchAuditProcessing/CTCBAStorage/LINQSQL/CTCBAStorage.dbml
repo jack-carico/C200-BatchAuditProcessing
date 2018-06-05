@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CTCBAStorage" Class="CTCBAStorageDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.StudentAudits" Member="Z_StudentAudits">
+    <Type Name="Z_StudentAudit">
+      <Column Name="RecordId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StudentId" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="AuditTimestamp" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ProgramCode" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CreditsRequired" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CreditsApplied" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="DegreeTitle" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="AuditText" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Z_StudentAudit_Z_UnusedCourse" Member="Z_UnusedCourses" Storage="_UnusedCourses" ThisKey="RecordId" OtherKey="StudentAudit_RecordId" Type="Z_UnusedCourse" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UnusedCourses" Member="Z_UnusedCourses">
+    <Type Name="Z_UnusedCourse">
+      <Column Name="RecordId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CourseStatus" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="CourseId" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CourseTitle" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="EnrolledCredits" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="LetterGrade" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="QuarterLabel" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="CTCYrq" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="StudentAudit_RecordId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Z_StudentAudit_Z_UnusedCourse" Member="Z_StudentAudit" Storage="_StudentAudit" ThisKey="StudentAudit_RecordId" OtherKey="RecordId" Type="Z_StudentAudit" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UnusedCourseStatus" Member="Z_UnusedCourseStatus">
+    <Type Name="Z_UnusedCourseStatus">
+      <Column Name="CourseStatus" Type="System.String" DbType="NVarChar(1) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StatusTitle" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.v_MostRecentAudit" Member="v_MostRecentAudits">
+    <Type Name="v_MostRecentAudit">
+      <Column Name="RecordId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StudentId" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="AuditTimestamp" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ProgramCode" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CreditsRequired" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CreditsApplied" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="DegreeTitle" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

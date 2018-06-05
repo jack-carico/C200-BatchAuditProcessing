@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 8.5" name="CTCBAStorage">
+  <DataContextMoniker Name="/CTCBAStorageDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ceddd3df-8bbc-4eff-8dbe-e7510afbb2a3" absoluteBounds="4, 1.125, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/CTCBAStorageDataContext/Z_StudentAudit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c2c18398-9a61-4c5f-8ccc-c91dde4a2a28" absoluteBounds="4.015, 1.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ee276a79-ad44-46bd-9ea6-6432c599273d" absoluteBounds="6.75, 1.125, 2, 2.5401025390625">
+      <DataClassMoniker Name="/CTCBAStorageDataContext/Z_UnusedCourse" />
+      <nestedChildShapes>
+        <elementListCompartment Id="07b6ca30-dbbd-4c9e-b85e-9a7fae948481" absoluteBounds="6.765, 1.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="40603a1e-5343-4082-b6ed-1fe0a7d04457" absoluteBounds="9, 1.125, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/CTCBAStorageDataContext/Z_UnusedCourseStatus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8caaca8f-b169-4c9a-b1c5-ef9411f70a94" absoluteBounds="9.015, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="342406bb-2c0f-4258-8f9a-696dd343ef72" absoluteBounds="1.75, 1.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/CTCBAStorageDataContext/v_MostRecentAudit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0b6e2c05-20dd-4677-95af-93ee4fd64ac0" absoluteBounds="1.7649999999999997, 1.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6 : 2.29890055338542); (6.75 : 2.29890055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CTCBAStorageDataContext/Z_StudentAudit/Z_StudentAudit_Z_UnusedCourse" />
+      <nodes>
+        <classShapeMoniker Id="ceddd3df-8bbc-4eff-8dbe-e7510afbb2a3" />
+        <classShapeMoniker Id="ee276a79-ad44-46bd-9ea6-6432c599273d" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

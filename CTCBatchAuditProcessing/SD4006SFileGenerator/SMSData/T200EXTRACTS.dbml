@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="T200EXTRACTS" Class="T200EXTRACTSDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=wwcc-mssql3;Initial Catalog=T200EXTRACTS;Integrated Security=True" SettingsObjectName="SD4006SFileGenerator.Properties.Settings" SettingsPropertyName="T200EXTRACTSConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.STU_YRQ_M" Member="STU_YRQ_Ms">
+    <Type Name="STU_YRQ_M">
+      <Column Name="IMAGE_RECNBR" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SQ_SID" Type="System.String" DbType="Char(9) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SQ_YRQ" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ATTND_NEXT_QTR" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CITZ_STAT" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="CONCURR_ENR" Type="System.Decimal" DbType="Decimal(3,0)" CanBeNull="true" />
+      <Column Name="FEE_PAY_STAT" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="QTR_CR_EARN" Type="System.Decimal" DbType="Decimal(4,1)" CanBeNull="true" />
+      <Column Name="QTR_CR_REG" Type="System.Decimal" DbType="Decimal(4,1)" CanBeNull="true" />
+      <Column Name="QTR_GPA" Type="System.Decimal" DbType="Decimal(4,2)" CanBeNull="true" />
+      <Column Name="QTR_GPA_CR" Type="System.Decimal" DbType="Decimal(4,1)" CanBeNull="true" />
+      <Column Name="REG_ACTV_DATE" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="RES_STAT" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="STU_INT" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="STU_TYP" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="STU_PRG_ENR" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="VET_BENE" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CONS_QTR" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="STU_PURP_ATTND" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="STU_PLAN_WORK" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="QTR_HR_EARN" Type="System.Decimal" DbType="Decimal(5,1)" CanBeNull="true" />
+      <Column Name="QTR_HR_REG" Type="System.Decimal" DbType="Decimal(5,1)" CanBeNull="true" />
+      <Column Name="QTR_GPA_HR" Type="System.Decimal" DbType="Decimal(5,1)" CanBeNull="true" />
+      <Column Name="STU_QTR_STAT" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.STU_D" Member="STU_Ds">
+    <Type Name="STU_D">
+      <Column Name="IMAGE_RECNBR" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ABBR_LAST_NAME" Type="System.String" DbType="Char(6) NOT NULL" CanBeNull="false" />
+      <Column Name="ADV_ID" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="BIRTH_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CITZ_STAT" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="FEE_PAY_STAT" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="LAST_YRQ_ATTND" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="STU_CITY" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="STU_ST" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="STU_STREET" Type="System.String" DbType="VarChar(24)" CanBeNull="true" />
+      <Column Name="STU_ZIP" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="OPT_1" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="OPT_2" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="RES_STAT" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="GENDER" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="SID" Type="System.String" DbType="Char(9) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="STU_DAY_PHONE" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="STU_ENR_STAT" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="STU_EVE_PHONE" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="STU_NAME" Type="System.String" DbType="VarChar(22)" CanBeNull="true" />
+      <Column Name="STU_TYP" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="VET_BENE" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="BAD_ADDR_CD" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="STU_INT" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="STU_PRG_ENR" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.YRQ_M" Member="YRQ_Ms">
+    <Type Name="YRQ_M">
+      <Column Name="IMAGE_RECNBR" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="YRQ" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ABBR_TITLE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="FIFTH_DAY_YRQ" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="FIRST_DAY_YRQ" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="HDCNT" Type="System.Decimal" DbType="Decimal(5,0)" CanBeNull="true" />
+      <Column Name="LAST_DAY_YRQ" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="LAST_TEN_UPD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="TEN_DAY_YRQ" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="FREEZE_REG" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="REG_MAX_CR" Type="System.Decimal" DbType="Decimal(4,1)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="T200EXTRACTS">
+  <DataContextMoniker Name="/T200EXTRACTSDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c2ef4f7b-8da5-4ba8-a224-2d6abfdc8c99" absoluteBounds="1.375, 1.25, 2, 5.4246240234375">
+      <DataClassMoniker Name="/T200EXTRACTSDataContext/STU_YRQ_M" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f0841efa-cf20-489f-8bd1-3c79c6cb520f" absoluteBounds="1.3900000000000001, 1.71, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="af0bafa9-6410-4d04-b1e9-f892e1e201d3" absoluteBounds="3.625, 1.25, 2, 5.6169254557291657">
+      <DataClassMoniker Name="/T200EXTRACTSDataContext/STU_D" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8d62aa41-1137-4942-9815-8bb5de09b5c2" absoluteBounds="3.6399999999999997, 1.71, 1.9700000000000002, 5.0569254557291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8fef2682-c2b2-431c-89e7-2bd0c37e687a" absoluteBounds="5.875, 1.25, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/T200EXTRACTSDataContext/YRQ_M" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1be23cd0-f2e9-41d4-afb1-2409cb370aa3" absoluteBounds="5.89, 1.71, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
